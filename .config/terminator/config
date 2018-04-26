@@ -1,0 +1,24 @@
+[global_config]
+  enabled_plugins = CustomCommandsMenu, InactivityWatch, TestPlugin, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, Logger, MavenPluginURLHandler, LaunchpadBugURLHandler
+  extra_styling = False
+  suppress_multiple_term_dialog = True
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    cursor_color = "#aaaaaa"
+    font = Adobe Helvetica Bold 16
+    icon_bell = False
+    scrollback_lines = 10000
+    scrollbar_position = hidden
+    show_titlebar = False
