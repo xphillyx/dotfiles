@@ -1,6 +1,9 @@
 {
+	"font_face": "Hack",
 	"font_size": 12,
+	"open_files_in_new_window": false,
 	"tab_size": 2,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"ui_scale":  1.30,
+	"ui_scale": 1.3
 }
