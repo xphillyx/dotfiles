@@ -48,6 +48,10 @@ mkinitcpio -p linux
 # FONT=ter-v32n
 nano /etc/vconsole
 
+# uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen
+vim /etc/locale.gen
+locale-gen
+
 # remember the disk password and change the root password!
 reboot
 ```
