@@ -1,0 +1,6 @@
+[user]
+	name = Daniel Hood
+	email = hood.danielc@gmail.com
+	signingkey = 55A2BD3FDE25913B4000F458937C0F8C43928815
+[commit]
+	gpgsign = true
