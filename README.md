@@ -95,4 +95,9 @@ pacman -S \
                     ttf-hack
 ```
 
+- Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) to get `.zshrc` to work
+- Optional [post installation steps](https://wiki.archlinux.org/index.php/general_recommendations)
+- Optional [nvidia wiki](https://wiki.archlinux.org/index.php/NVIDIA)
+- Optional `sudo nvidia-xconfig` will automatically configure X11 config if you have an nvidia card
+
 That is it. That's everything I need.
