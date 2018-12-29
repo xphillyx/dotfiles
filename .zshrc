@@ -91,3 +91,10 @@ ibwatch() {
       ib --test_all test --cfg test;
     done
 }
+
+ibwatch_one() {
+    WORK=( $(find . -type f -regex '.*\(cc\|h\)$' -a -not -path './.git/*' -a -not -path './node_modules/*') )
+    while inotifywait -e close_write "${WORK[@]}"; do
+      ib --test --cfg test "${@}";
+    done
+}
