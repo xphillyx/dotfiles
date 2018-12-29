@@ -83,3 +83,11 @@ linknode() {
         echo "WARNING: ${TARGET_NODEBIN} global modules bin not found"
     fi
 }
+
+ibwatch() {
+    # run tests when c++ code changes
+    WORK=( $(find . -type f -regex '.*\(cc\|h\)$' -a -not -path './.git/*' -a -not -path './node_modules/*') )
+    while inotifywait -e close_write "${WORK[@]}"; do
+      ib --test_all test --cfg test;
+    done
+}
